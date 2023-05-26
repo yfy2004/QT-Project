@@ -1,5 +1,17 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>picture/background.png</file>
+        <file>picture/start.png</file>
+        <file>picture/record.png</file>
+        <file>picture/gameover.png</file>
+        <file>picture/record_new.png</file>
+        <file>picture/gameover_new.png</file>
+        <file>picture/start_new.png</file>
+        <file>picture/record_new_new.png</file>
+        <file>picture/help.png</file>
+        <file>picture/music_on.png</file>
+        <file>picture/music_off.png</file>
+        <file>picture/background_new.png</file>
+        <file>picture/background_music.mp3</file>
     </qresource>
 </RCC>
