@@ -17,7 +17,9 @@
         <file>picture/help_platform.png</file>
         <file>picture/help_return_hovering.png</file>
         <file>picture/main_standard.png</file>
-        <file>picture/return_dark.png</file>
         <file>picture/return_light.png</file>
+        <file>picture/return_dark_new.png</file>
+        <file>picture/return_dark.png</file>
+        <file>picture/return_light_new.png</file>
     </qresource>
 </RCC>
