@@ -21,5 +21,18 @@
         <file>picture/return_dark_new.png</file>
         <file>picture/return_dark.png</file>
         <file>picture/return_light_new.png</file>
+        <file>picture/zero.png</file>
+        <file>picture/two.png</file>
+        <file>picture/four.png</file>
+        <file>picture/continue_dark.png</file>
+        <file>picture/continue_light.png</file>
+        <file>picture/one.png</file>
+        <file>picture/three.png</file>
+        <file>picture/victory_final.png</file>
+        <file>picture/return_dark_another.png</file>
+        <file>picture/return_light_another.png</file>
+        <file>picture/again_dark.png</file>
+        <file>picture/again_light.png</file>
+        <file>picture/lose.png</file>
     </qresource>
 </RCC>

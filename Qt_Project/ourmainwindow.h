@@ -11,6 +11,10 @@
 #include <ui_help_platform.h>
 #include <record.h>
 #include <ui_record.h>
+#include <victory.h>
+#include <ui_victory.h>
+#include <lose.h>
+#include <ui_lose.h>
 
 namespace Ui {
 class OurMainWindow;

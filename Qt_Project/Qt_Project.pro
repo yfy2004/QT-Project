@@ -30,19 +30,25 @@ SOURCES += \
         ourmainwindow.cpp \
     game.cpp \
     help_platform.cpp \
-    record.cpp
+    record.cpp \
+    victory.cpp \
+    lose.cpp
 
 HEADERS += \
         ourmainwindow.h \
     game.h \
     help_platform.h \
-    record.h
+    record.h \
+    victory.h \
+    lose.h
 
 FORMS += \
         ourmainwindow.ui \
     game.ui \
     help_platform.ui \
-    record.ui
+    record.ui \
+    victory.ui \
+    lose.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

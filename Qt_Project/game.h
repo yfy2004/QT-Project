@@ -16,10 +16,10 @@ class Game : public QWidget
 public:
     explicit Game(QWidget *parent = nullptr);
     ~Game();
+    QMediaPlayer *my_game_music=nullptr;
 
 private:
     Ui::Game *ui;
-    QMediaPlayer *my_game_music=nullptr;
 };
 
 #endif // GAME_H
