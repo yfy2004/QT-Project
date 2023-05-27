@@ -5,9 +5,12 @@
 #include <QMainWindow>
 #include <QMultimedia>
 #include <QMediaPlayer>
-#include <QMediaPlaylist>
 #include <game.h>
 #include <ui_game.h>
+#include <help_platform.h>
+#include <ui_help_platform.h>
+#include <record.h>
+#include <ui_record.h>
 
 namespace Ui {
 class OurMainWindow;
@@ -30,8 +33,15 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::OurMainWindow *ui;
+    QMediaPlayer *my_BGM=nullptr;
 };
 
 #endif // OURMAINWINDOW_H

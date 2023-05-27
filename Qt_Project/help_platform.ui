@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help_platform</class>
+ <widget class="QWidget" name="help_platform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1322</width>
+    <height>987</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#help_platform{
+border-image: url(:/new/prefix1/picture/help_platform.png);}
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>820</y>
+     <width>271</width>
+     <height>79</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>271</width>
+     <height>79</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton{
+background:transparent;
+border:1px solid rgba(255,255,255,0);
+}
+QPushButton#pushButton:hover{
+background-image: url(:/new/prefix1/picture/help_return_hovering.png);
+border:1px solid rgba(255,255,255,0);
+}
+QPushButton#pushButton:pressed{
+background-image: url(:/new/prefix1/picture/help_return_hovering.png);
+border:1px solid rgba(255,255,255,0);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

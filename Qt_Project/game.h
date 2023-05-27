@@ -2,6 +2,8 @@
 #define GAME_H
 
 #include <QWidget>
+#include <QMultimedia>
+#include <QMediaPlayer>
 
 namespace Ui {
 class Game;
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::Game *ui;
+    QMediaPlayer *my_game_music=nullptr;
 };
 
 #endif // GAME_H

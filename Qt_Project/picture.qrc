@@ -12,6 +12,12 @@
         <file>picture/music_on.png</file>
         <file>picture/music_off.png</file>
         <file>picture/background_new.png</file>
-        <file>picture/background_music.mp3</file>
+        <file>picture/LevelMusic.mp3</file>
+        <file>picture/MenuMusic.mp3</file>
+        <file>picture/help_platform.png</file>
+        <file>picture/help_return_hovering.png</file>
+        <file>picture/main_standard.png</file>
+        <file>picture/return_dark.png</file>
+        <file>picture/return_light.png</file>
     </qresource>
 </RCC>

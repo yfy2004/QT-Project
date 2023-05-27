@@ -28,15 +28,21 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         ourmainwindow.cpp \
-    game.cpp
+    game.cpp \
+    help_platform.cpp \
+    record.cpp
 
 HEADERS += \
         ourmainwindow.h \
-    game.h
+    game.h \
+    help_platform.h \
+    record.h
 
 FORMS += \
         ourmainwindow.ui \
-    game.ui
+    game.ui \
+    help_platform.ui \
+    record.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

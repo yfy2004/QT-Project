@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\ourmainwindow.o
+./release\game.o
+./release\help_platform.o
+./release\record.o
+./release\qrc_picture.o
+./release\moc_ourmainwindow.o
+./release\moc_game.o
+./release\moc_help_platform.o
+./release\moc_record.o
+);
