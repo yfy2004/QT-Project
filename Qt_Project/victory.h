@@ -10,7 +10,7 @@
 namespace Ui {
 class victory;
 }
-
+class Game;
 class victory : public QWidget
 {
     Q_OBJECT

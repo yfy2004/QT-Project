@@ -10,7 +10,7 @@
 namespace Ui {
 class lose;
 }
-
+class Game;
 class lose : public QWidget
 {
     Q_OBJECT

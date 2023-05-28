@@ -10,7 +10,7 @@ victory::victory(QWidget *parent,Game *father) :
 
     this->setAutoFillBackground(true);
     QPalette p;
-    QPixmap pix(":/new/prefix1/picture/victory_final.png");
+    QPixmap pix(":/new/prefix1/picture/victory_final_new.png");
     p.setBrush(QPalette::Window,QBrush(pix));
     this->setPalette(p);
     this->show();

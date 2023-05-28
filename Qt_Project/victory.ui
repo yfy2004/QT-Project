@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/new/prefix1/picture/victory_final.png);</string>
+   <string notr="true">background-image: url(:/new/prefix1/picture/victory_final_new.png);</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">

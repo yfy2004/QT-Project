@@ -32,7 +32,8 @@ SOURCES += \
     help_platform.cpp \
     record.cpp \
     victory.cpp \
-    lose.cpp
+    lose.cpp \
+    setting.cpp
 
 HEADERS += \
         ourmainwindow.h \
@@ -40,7 +41,8 @@ HEADERS += \
     help_platform.h \
     record.h \
     victory.h \
-    lose.h
+    lose.h \
+    setting.h
 
 FORMS += \
         ourmainwindow.ui \
@@ -48,7 +50,8 @@ FORMS += \
     help_platform.ui \
     record.ui \
     victory.ui \
-    lose.ui
+    lose.ui \
+    setting.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

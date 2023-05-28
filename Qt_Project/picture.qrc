@@ -34,5 +34,25 @@
         <file>picture/again_dark.png</file>
         <file>picture/again_light.png</file>
         <file>picture/lose.png</file>
+        <file>picture/setting_dark.png</file>
+        <file>picture/setting_light.png</file>
+        <file>picture/setting_back.png</file>
+        <file>picture/victory_final_new.png</file>
+        <file>picture/first.png</file>
+        <file>picture/second.png</file>
+        <file>picture/third.png</file>
+        <file>picture/record_time.png</file>
+        <file>picture/record_diamond.png</file>
+        <file>picture/timer.png</file>
+        <file>picture/five.png</file>
+        <file>picture/six.png</file>
+        <file>picture/seven.png</file>
+        <file>picture/eight.png</file>
+        <file>picture/nine.png</file>
+        <file>picture/one_new.png</file>
+        <file>picture/zero_new.png</file>
+        <file>picture/two_new.png</file>
+        <file>picture/three_new.png</file>
+        <file>picture/four_new.png</file>
     </qresource>
 </RCC>

@@ -25,7 +25,7 @@ void OurMainWindow::on_pushButton_clicked()
 {
     Game *configWindow = new Game;
     configWindow->show();
-    lose *configWindow2 = new lose(nullptr,configWindow);
+    victory *configWindow2 = new victory(nullptr,configWindow);
     configWindow2->show();
     this->close();
 }

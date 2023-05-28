@@ -26,13 +26,26 @@ public:
         if (help_platform->objectName().isEmpty())
             help_platform->setObjectName(QStringLiteral("help_platform"));
         help_platform->resize(1322, 987);
-        help_platform->setStyleSheet(QStringLiteral("#help_platform{background-image: url(:/new/prefix1/picture/help_platform.png);}"));
+        help_platform->setStyleSheet(QLatin1String("QWidget#help_platform{\n"
+"border-image: url(:/new/prefix1/picture/help_platform.png);}\n"
+""));
         pushButton = new QPushButton(help_platform);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(530, 810, 271, 79));
+        pushButton->setGeometry(QRect(530, 820, 271, 79));
         pushButton->setMinimumSize(QSize(271, 79));
-        pushButton->setStyleSheet(QLatin1String("background-image: url(:/new/prefix1/picture/help_return_hovering.png);\n"
+        pushButton->setStyleSheet(QLatin1String("QPushButton#pushButton{\n"
+"background:transparent;\n"
 "border:1px solid rgba(255,255,255,0);\n"
+"}\n"
+"QPushButton#pushButton:hover{\n"
+"background-image: url(:/new/prefix1/picture/help_return_hovering.png);\n"
+"border:1px solid rgba(255,255,255,0);\n"
+"}\n"
+"QPushButton#pushButton:pressed{\n"
+"background-image: url(:/new/prefix1/picture/help_return_hovering.png);\n"
+"border:1px solid rgba(255,255,255,0);\n"
+"}\n"
+"\n"
 ""));
         pushButton->setFlat(true);
 
