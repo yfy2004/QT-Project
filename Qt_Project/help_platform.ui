@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#help_platform{
-border-image: url(:/new/prefix1/picture/help_platform.png);}
+background-image: url(:/new/prefix1/picture/help_platform.png);}
 </string>
   </property>
   <widget class="QPushButton" name="pushButton">

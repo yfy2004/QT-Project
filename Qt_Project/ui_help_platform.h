@@ -27,7 +27,7 @@ public:
             help_platform->setObjectName(QStringLiteral("help_platform"));
         help_platform->resize(1322, 987);
         help_platform->setStyleSheet(QLatin1String("QWidget#help_platform{\n"
-"border-image: url(:/new/prefix1/picture/help_platform.png);}\n"
+"background-image: url(:/new/prefix1/picture/help_platform.png);}\n"
 ""));
         pushButton = new QPushButton(help_platform);
         pushButton->setObjectName(QStringLiteral("pushButton"));

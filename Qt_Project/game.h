@@ -36,7 +36,7 @@ private slots:
 
     void update();
 
-private:
+public:
     Ui::Game *ui;
 
 };

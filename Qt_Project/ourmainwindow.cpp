@@ -6,12 +6,13 @@ OurMainWindow::OurMainWindow(QWidget *parent) :
     ui(new Ui::OurMainWindow)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::FramelessWindowHint);
 
     ui->pushButton_6->setEnabled(false);
     ui->pushButton_6->setVisible(0);
 
     my_BGM=new QMediaPlayer(this);
-    my_BGM->setMedia(QUrl::fromLocalFile("C:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project/picture/MenuMusic.mp3"));
+    my_BGM->setMedia(QUrl("qrc:/new/prefix1/picture/MenuMusic.mp3"));
     my_BGM->setVolume(50);
     my_BGM->play();
 }
@@ -25,8 +26,6 @@ void OurMainWindow::on_pushButton_clicked()
 {
     Game *configWindow = new Game;
     configWindow->show();
-    victory *configWindow2 = new victory(nullptr,configWindow);
-    configWindow2->show();
     this->close();
 }
 

@@ -8,6 +8,7 @@ Game::Game(QWidget *parent) :
     ui(new Ui::Game)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::FramelessWindowHint);
 
     time.setHMS(0,0,0,0);
     timer = new QTimer(this);
@@ -15,7 +16,7 @@ Game::Game(QWidget *parent) :
     timer->start(1000);
 
     my_game_music=new QMediaPlayer(this);
-    my_game_music->setMedia(QUrl::fromLocalFile("C:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project/picture/LevelMusic.mp3"));
+    my_game_music->setMedia(QUrl("qrc:/new/prefix1/picture/LevelMusic.mp3"));
     my_game_music->setVolume(50);
     my_game_music->play();
 
@@ -55,6 +56,7 @@ void Game::on_setting_clicked()
     setting *configWindow=new setting(nullptr,this);
     configWindow->show();
     timer->stop();
+    ui->setting->setEnabled(false);
 }
 
 void Game::update()

@@ -9,14 +9,15 @@ help_platform::help_platform(QWidget *parent) :
 
     move(600,235);
 
-    this->setAutoFillBackground(true);
+    setAutoFillBackground(true);
     QPalette p;
     QPixmap pix(":/new/prefix1/picture/help_platform.png");
     p.setBrush(QPalette::Window,QBrush(pix));
-    this->setPalette(p);
+    setPalette(p);
     this->show();
 
     ui->pushButton->setStyleSheet("QPushButton#pushButton{background:transparent;border:1px solid rgba(255,255,255,0);}QPushButton#pushButton:hover{background-image: url(:/new/prefix1/picture/help_return_hovering.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton:pressed{background-image: url(:/new/prefix1/picture/help_return_hovering.png);border:1px solid rgba(255,255,255,0);}");
+    setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
 }
 
 help_platform::~help_platform()
