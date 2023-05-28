@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QMultimedia>
 #include <QMediaPlayer>
+#include <QMediaPlaylist>
 #include <setting.h>
 #include <ui_setting.h>
 #include <QTimer>

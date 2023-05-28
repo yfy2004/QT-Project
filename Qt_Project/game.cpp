@@ -15,8 +15,12 @@ Game::Game(QWidget *parent) :
     connect(timer,SIGNAL(timeout()),this,SLOT(update()));
     timer->start(1000);
 
+    QMediaPlaylist *my_list = new QMediaPlaylist();
+    my_list->addMedia(QUrl("qrc:/new/prefix1/picture/LevelMusic.mp3"));
+    my_list->setCurrentIndex(0);
+    my_list->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     my_game_music=new QMediaPlayer(this);
-    my_game_music->setMedia(QUrl("qrc:/new/prefix1/picture/LevelMusic.mp3"));
+    my_game_music->setPlaylist(my_list);
     my_game_music->setVolume(50);
     my_game_music->play();
 

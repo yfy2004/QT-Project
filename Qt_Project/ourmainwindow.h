@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QMultimedia>
 #include <QMediaPlayer>
+#include <QMediaPlaylist>
 #include <game.h>
 #include <ui_game.h>
 #include <help_platform.h>

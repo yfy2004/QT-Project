@@ -11,8 +11,12 @@ OurMainWindow::OurMainWindow(QWidget *parent) :
     ui->pushButton_6->setEnabled(false);
     ui->pushButton_6->setVisible(0);
 
+    QMediaPlaylist *my_list = new QMediaPlaylist();
+    my_list->addMedia(QUrl("qrc:/new/prefix1/picture/MenuMusic.mp3"));
+    my_list->setCurrentIndex(0);
+    my_list->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     my_BGM=new QMediaPlayer(this);
-    my_BGM->setMedia(QUrl("qrc:/new/prefix1/picture/MenuMusic.mp3"));
+    my_BGM->setPlaylist(my_list);
     my_BGM->setVolume(50);
     my_BGM->play();
 }
