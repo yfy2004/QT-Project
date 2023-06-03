@@ -2,6 +2,12 @@
 #define GAME_H
 #include "setting.h"
 #include <QWidget>
+#include <QDialog>
+#include <QDebug>
+#include <QPixmap>
+#include <QPainter>
+#include <QKeyEvent>
+#include <QMessageBox>
 #include <QMultimedia>
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
@@ -12,6 +18,7 @@
 
 namespace Ui {
 class Game;
+//class Ice;
 }
 
 class setting;
@@ -41,5 +48,23 @@ public:
     Ui::Game *ui;
 
 };
+/*
+class Ice : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit Ice(QWidget *parent = 0);
+    ~Ice();
+
+protected:
+
+    void paintEvent(QPaintEvent *event);
+
+    void keyPressEvent(QKeyEvent *event);
+
+public:
+    Ui::Ice *ui;
+};*/
 
 #endif // GAME_H
