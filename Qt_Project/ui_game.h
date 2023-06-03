@@ -33,9 +33,9 @@ public:
     {
         if (Game->objectName().isEmpty())
             Game->setObjectName(QStringLiteral("Game"));
-        Game->resize(1512, 1134);
-        Game->setMinimumSize(QSize(1512, 1134));
-        Game->setMaximumSize(QSize(1512, 1134));
+        Game->resize(1512, 1000);
+        Game->setMinimumSize(QSize(1512, 1000));
+        Game->setMaximumSize(QSize(1512, 1000));
         musicon = new QPushButton(Game);
         musicon->setObjectName(QStringLiteral("musicon"));
         musicon->setGeometry(QRect(1444, 7, 45, 38));
@@ -50,7 +50,7 @@ public:
         musicoff->setFlat(true);
         setting = new QPushButton(Game);
         setting->setObjectName(QStringLiteral("setting"));
-        setting->setGeometry(QRect(706, 1076, 100, 58));
+        setting->setGeometry(QRect(706, 942, 100, 58));
         setting->setStyleSheet(QStringLiteral("QPushButton#setting{background-image: url(:/new/prefix1/picture/setting_dark.png);border:1px solid rgba(255,255,255,0);}QPushButton#setting:hover{background-image: url(:/new/prefix1/picture/setting_light.png);border:1px solid rgba(255,255,255,0);}QPushButton#setting:pressed{background-image: url(:/new/prefix1/picture/setting_light.png);border:1px solid rgba(255,255,255,0);}"));
         setting->setFlat(true);
         label = new QLabel(Game);
