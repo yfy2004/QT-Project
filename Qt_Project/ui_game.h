@@ -38,6 +38,12 @@ public:
     QLabel *red3;
     QLabel *button;
     QLabel *block;
+    QLabel *blue4;
+    QLabel *blue5;
+    QLabel *blue6;
+    QLabel *red4;
+    QLabel *red5;
+    QLabel *red6;
 
     void setupUi(QWidget *Game)
     {
@@ -86,7 +92,7 @@ public:
         label_5->setStyleSheet(QStringLiteral("background:transparent;"));
         labelImg = new QLabel(Game);
         labelImg->setObjectName(QStringLiteral("labelImg"));
-        labelImg->setGeometry(QRect(620, 90, 101, 91));
+        labelImg->setGeometry(QRect(1012, 241, 101, 91));
         labelImg->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/fire.png);"));
         labelImg1 = new QLabel(Game);
         labelImg1->setObjectName(QStringLiteral("labelImg1"));
@@ -124,6 +130,30 @@ public:
         block->setObjectName(QStringLiteral("block"));
         block->setGeometry(QRect(0, 0, 1336, 1000));
         block->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/block.png);"));
+        blue4 = new QLabel(Game);
+        blue4->setObjectName(QStringLiteral("blue4"));
+        blue4->setGeometry(QRect(580, 510, 101, 101));
+        blue4->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/blue diamond.png);"));
+        blue5 = new QLabel(Game);
+        blue5->setObjectName(QStringLiteral("blue5"));
+        blue5->setGeometry(QRect(160, 240, 101, 101));
+        blue5->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/blue diamond.png);"));
+        blue6 = new QLabel(Game);
+        blue6->setObjectName(QStringLiteral("blue6"));
+        blue6->setGeometry(QRect(500, 635, 101, 101));
+        blue6->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/blue diamond.png);"));
+        red4 = new QLabel(Game);
+        red4->setObjectName(QStringLiteral("red4"));
+        red4->setGeometry(QRect(680, 510, 101, 101));
+        red4->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/red diamond.png);"));
+        red5 = new QLabel(Game);
+        red5->setObjectName(QStringLiteral("red5"));
+        red5->setGeometry(QRect(1070, 105, 101, 101));
+        red5->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/red diamond.png);"));
+        red6 = new QLabel(Game);
+        red6->setObjectName(QStringLiteral("red6"));
+        red6->setGeometry(QRect(760, 635, 101, 101));
+        red6->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/red diamond.png);"));
         button->raise();
         block->raise();
         musicon->raise();
@@ -142,6 +172,12 @@ public:
         red1->raise();
         red2->raise();
         red3->raise();
+        blue4->raise();
+        blue5->raise();
+        blue6->raise();
+        red4->raise();
+        red5->raise();
+        red6->raise();
 
         retranslateUi(Game);
 
@@ -169,6 +205,12 @@ public:
         red3->setText(QString());
         button->setText(QString());
         block->setText(QString());
+        blue4->setText(QString());
+        blue5->setText(QString());
+        blue6->setText(QString());
+        red4->setText(QString());
+        red5->setText(QString());
+        red6->setText(QString());
     } // retranslateUi
 
 };

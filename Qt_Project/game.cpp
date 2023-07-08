@@ -72,6 +72,8 @@ Game::Game(QWidget *parent,qint32 num) :
         ui->red1->setVisible(true);
         ui->red2->setVisible(true);
         ui->red3->setVisible(true);
+        ui->button->setVisible(false);
+        ui->block->setVisible(false);
     }
     else{
         blue[4]=0,blue[5]=0,blue[6]=0;
@@ -748,7 +750,7 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=112 && ui->labelImg1->y()<=440 && ui->labelImg1->x()>=221 && ui->labelImg1->x()<=549){
         qreal t=112+(ui->labelImg1->x()-221);
-        if(ui->labelImg1->y()>t){
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
             ice_is_falling=false;
             ui->labelImg1->move(ui->labelImg1->x(),t);
             ice_vx/=1.414;
@@ -760,7 +762,7 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=112 && ui->labelImg1->y()<=440 && ui->labelImg1->x()>=713 && ui->labelImg1->x()<=1041){
         qreal t=112+(1041-ui->labelImg1->x());
-        if(ui->labelImg1->y()>t){
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
             ice_is_falling=false;
             ui->labelImg1->move(ui->labelImg1->x(),t);
             ice_vx/=1.414;
@@ -817,7 +819,7 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=400 && ui->labelImg1->x()<=535){
         qreal t=457+(573-ui->labelImg1->y());
-        if(ui->labelImg1->x()<t && ui->labelImg1->x()>t-10){
+        if(ui->labelImg1->x()<t && ui->labelImg1->x()>t-15){
             ice_is_falling=true;
             ui->labelImg1->move(t,ui->labelImg1->y());
             ice_vx=0;
@@ -845,7 +847,7 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=241 && ui->labelImg1->y()<=440 && ui->labelImg1->x()>=249 && ui->labelImg1->x()<=448){
         qreal t=241+(ui->labelImg1->x()-249);
-        if(ui->labelImg1->y()>t){
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
             ice_is_falling=false;
             ui->labelImg1->move(ui->labelImg1->x(),t);
             ice_vx/=1.414;
@@ -857,7 +859,7 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=241 && ui->labelImg1->y()<=440 && ui->labelImg1->x()>=803 && ui->labelImg1->x()<=1012){
         qreal t=241+(1012-ui->labelImg1->x());
-        if(ui->labelImg1->y()>t){
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
             ice_is_falling=false;
             ui->labelImg1->move(ui->labelImg1->x(),t);
             ice_vx/=1.414;
@@ -954,6 +956,10 @@ void Game::fire_update()
     if(ui->labelImg->y()<30){
         ui->labelImg->move(ui->labelImg->x(),30);
         fire_vy=0;
+    }
+    if(game_num==2){
+        fire_update2();
+        return;
     }
     if(ui->labelImg->y()>870 &&(ui->labelImg->x()>=734 || ui->labelImg->x()<=576)){
         fire_is_falling=false;
@@ -1353,8 +1359,221 @@ void Game::fire_update()
 
 void Game::fire_update2()
 {
-    //if(ui->labelImg1->y()>=668 && ui->labelImg1->y()<=673 && ui->labelImg1->x()<=930 && ui->labelImg1->x()>=780)
+    if(ui->labelImg->y()>866){
+        timer->stop();
+        timer_ice->stop();
+        timer_fire->stop();
+        timer_animation->stop();
+        this->game_lose();
+        return;
+    }
+    if((ui->labelImg1->y()>504 && ui->labelImg1->y()<=509 && ui->labelImg1->x()<=641 && ui->labelImg1->x()>=622) || (ui->labelImg->y()>504 && ui->labelImg->y()<=509 && ui->labelImg->x()<=641 && ui->labelImg->x()>=622)){
+        buttonPressed=true;
+        ui->button->setVisible(false);
+        ui->block->setVisible(false);
+    }
+    else{
+        buttonPressed=false;
+        ui->button->setVisible(true);
+        ui->block->setVisible(true);
+    }
+    if(ui->labelImg->y()>112 && ui->labelImg->y()<132 && ui->labelImg->x()<221 && ui->labelImg->x()>=10){
+        fire_is_falling=false;
+        ui->labelImg->move(ui->labelImg->x(),112);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>112 && ui->labelImg->y()<132 && ui->labelImg->x()<=1230 && ui->labelImg->x()>1041){
+        fire_is_falling=false;
+        ui->labelImg->move(ui->labelImg->x(),112);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>=112 && ui->labelImg->y()<=440 && ui->labelImg->x()>=221 && ui->labelImg->x()<=549){
+        qreal t=112+(ui->labelImg->x()-221);
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
+    if(ui->labelImg->y()>=112 && ui->labelImg->y()<=440 && ui->labelImg->x()>=713 && ui->labelImg->x()<=1041){
+        qreal t=112+(1041-ui->labelImg->x());
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=-fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
+    if(ui->labelImg->y()>509 && ui->labelImg->y()<529 && ui->labelImg->x()<720 && ui->labelImg->x()>544){
+        fire_is_falling=false;
+        ui->labelImg->move(ui->labelImg->x(),509);
+        fire_vy=0;
+    }
+    if(!buttonPressed){
+        if(ui->labelImg->y()>573 && ui->labelImg->y()<600 && ui->labelImg->x()<=544 && ui->labelImg->x()>=413){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),573);
+            fire_vy=0;
+        }
+        if(ui->labelImg->y()>573 && ui->labelImg->y()<600 && ui->labelImg->x()<=852 && ui->labelImg->x()>=720){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),573);
+            fire_vy=0;
+        }
+        if(ui->labelImg->y()>639 && ui->labelImg->y()<666 && ui->labelImg->x()<=944 && ui->labelImg->x()>=313){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),639);
+            fire_vy=0;
+        }
+        if(ui->labelImg->y()>600 && ui->labelImg->y()<605 && ui->labelImg->x()<=544 && ui->labelImg->x()>415){
+            fire_is_falling=true;
+            ui->labelImg->move(ui->labelImg->x(),605);
+            fire_vy=0;
+        }
+        if(ui->labelImg->y()>600 && ui->labelImg->y()<605 && ui->labelImg->x()<850 && ui->labelImg->x()>=720){
+            fire_is_falling=true;
+            ui->labelImg->move(ui->labelImg->x(),605);
+            fire_vy=0;
+        }
+        if(ui->labelImg->y()>610 && ui->labelImg->y()<620 && ui->labelImg->x()<720 && ui->labelImg->x()>544){
+            fire_is_falling=true;
+            ui->labelImg->move(ui->labelImg->x(),620);
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>514 && ui->labelImg->y()<=573 && ui->labelImg->x()<574 && ui->labelImg->x()>544){
+        ui->labelImg->move(544,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>514 && ui->labelImg->y()<=573 && ui->labelImg->x()<720 && ui->labelImg->x()>690){
+        ui->labelImg->move(720,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>=495 && ui->labelImg->y()<=630 && ui->labelImg->x()>=400 && ui->labelImg->x()<=535){
+        qreal t=400+(630-ui->labelImg->y());
+        if(ui->labelImg->x()<t && ui->labelImg->x()>t-15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>=495 && ui->labelImg->y()<=630 && ui->labelImg->x()>=730 && ui->labelImg->x()<=865){
+        qreal t=730+(ui->labelImg->y()-495);
+        if(ui->labelImg->x()>t && ui->labelImg->x()<t+15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>241 && ui->labelImg->y()<261 && ui->labelImg->x()<249 && ui->labelImg->x()>=10){
+        fire_is_falling=false;
+        ui->labelImg->move(ui->labelImg->x(),241);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>241 && ui->labelImg->y()<261 && ui->labelImg->x()<=1230 && ui->labelImg->x()>1012){
+        fire_is_falling=false;
+        ui->labelImg->move(ui->labelImg->x(),241);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>=241 && ui->labelImg->y()<=440 && ui->labelImg->x()>=249 && ui->labelImg->x()<=448){
+        qreal t=241+(ui->labelImg->x()-249);
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
+    if(ui->labelImg->y()>=241 && ui->labelImg->y()<=440 && ui->labelImg->x()>=803 && ui->labelImg->x()<=1012){
+        qreal t=241+(1012-ui->labelImg->x());
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=-fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
+    if(ui->labelImg->y()>=495 && ui->labelImg->y()<=630 && ui->labelImg->x()>=300 && ui->labelImg->x()<=435){
+        qreal t=300+(630-ui->labelImg->y());
+        if(ui->labelImg->x()<t && ui->labelImg->x()>t-15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>=495 && ui->labelImg->y()<=630 && ui->labelImg->x()>=830 && ui->labelImg->x()<=965){
+        qreal t=830+(ui->labelImg->y()-495);
+        if(ui->labelImg->x()>t && ui->labelImg->x()<t+15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>=165 && ui->labelImg->y()<=465 && ui->labelImg->x()>=220 && ui->labelImg->x()<=520){
+        qreal t=220+(ui->labelImg->y()-165);
+        if(ui->labelImg->x()>t && ui->labelImg->x()<t+15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>=165 && ui->labelImg->y()<=465 && ui->labelImg->x()>=750 && ui->labelImg->x()<=1050){
+        qreal t=750+(465-ui->labelImg->y());
+        if(ui->labelImg->x()<t && ui->labelImg->x()>t-15){
+            fire_is_falling=true;
+            ui->labelImg->move(t,ui->labelImg->y());
+            fire_vx=0;
+            fire_vy=0;
+        }
+    }
+    if(ui->labelImg->y()>155 && ui->labelImg->y()<165 && ui->labelImg->x()<=226 && ui->labelImg->x()>=10){
+        fire_is_falling=true;
+        ui->labelImg->move(ui->labelImg->x(),165);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>155 && ui->labelImg->y()<165 && ui->labelImg->x()<=1230 && ui->labelImg->x()>=1036){
+        fire_is_falling=true;
+        ui->labelImg->move(ui->labelImg->x(),165);
+        fire_vy=0;
+    }
+    if(ui->labelImg->y()>=509 && ui->labelImg->y()<573 && ui->labelImg->x()>534 && ui->labelImg->x()<=544){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=509 && ui->labelImg->y()<573 && ui->labelImg->x()>=720 && ui->labelImg->x()<730){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=440 && ui->labelImg->y()<445 && ui->labelImg->x()>=549 && ui->labelImg->x()<554){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=440 && ui->labelImg->y()<445 && ui->labelImg->x()>708 && ui->labelImg->x()<=713){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=440 && ui->labelImg->y()<445 && ui->labelImg->x()>=449 && ui->labelImg->x()<454){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=440 && ui->labelImg->y()<445 && ui->labelImg->x()>808 && ui->labelImg->x()<=813){
+        fire_is_falling=true;
+    }
 }
+
 
 void Game::animation_update()
 {
