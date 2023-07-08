@@ -35,7 +35,7 @@ class Game : public QWidget
     Q_OBJECT
 
 public:
-    explicit Game(QWidget *parent = nullptr, qint32 num=2);
+    explicit Game(QWidget *parent = nullptr, qint32 num=1);
     ~Game();
     QMediaPlayer *my_game_music=nullptr;
     QTimer *timer=nullptr;
