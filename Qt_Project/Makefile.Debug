@@ -135,43 +135,85 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_picture.cpp
 debug/qrc_picture.cpp: picture.qrc \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/rcc.exe \
-		picture/record.png \
-		picture/zero.png \
-		picture/return_light_another.png \
-		picture/help.png \
-		picture/return_dark_new.png \
-		picture/background.png \
-		picture/continue_light.png \
-		picture/MenuMusic.mp3 \
-		picture/three.png \
-		picture/record_new.png \
-		picture/return_light.png \
-		picture/background_new.png \
-		picture/continue_dark.png \
-		picture/again_light.png \
 		picture/return_light_new.png \
-		picture/start_new.png \
-		picture/setting_dark.png \
-		picture/two.png \
-		picture/again_dark.png \
-		picture/start.png \
-		picture/return_dark_another.png \
-		picture/gameover_new.png \
-		picture/music_off.png \
-		picture/record_new_new.png \
-		picture/victory_final.png \
-		picture/music_on.png \
-		picture/main_standard.png \
 		picture/lose.png \
-		picture/gameover.png \
-		picture/help_platform.png \
-		picture/setting_light.png \
-		picture/return_dark.png \
-		picture/help_return_hovering.png \
-		picture/one.png \
-		picture/LevelMusic.mp3 \
+		picture/background.png \
 		picture/four.png \
-		picture/setting_back.png
+		picture/setting_back.png \
+		picture/zero.png \
+		picture/nine.png \
+		picture/two_new.png \
+		picture/again_light.png \
+		picture/return_dark.png \
+		picture/ice_right4.png \
+		picture/map0.png \
+		picture/music_off.png \
+		picture/fire_right1.png \
+		picture/continue_dark.png \
+		picture/music_on.png \
+		picture/maphard_init.png \
+		picture/ice.png \
+		picture/return_light_another.png \
+		picture/ice_left4.png \
+		picture/start.png \
+		picture/LevelMusic.mp3 \
+		picture/again_dark.png \
+		picture/record_diamond.png \
+		picture/fire_left4.png \
+		picture/five.png \
+		picture/main_standard.png \
+		picture/ice_right3.png \
+		picture/colon.png \
+		picture/record.png \
+		picture/one.png \
+		picture/gameover.png \
+		picture/button.png \
+		picture/block.png \
+		picture/zero_new.png \
+		picture/three.png \
+		picture/ice_left3.png \
+		picture/record_time.png \
+		picture/fire_right4.png \
+		picture/ice_jump.png \
+		picture/fire_left3.png \
+		picture/return_dark_another.png \
+		picture/fire_jump.png \
+		picture/one_new.png \
+		picture/ice_right2.png \
+		picture/setting_dark.png \
+		picture/eight.png \
+		picture/MenuMusic.mp3 \
+		picture/six.png \
+		picture/help_return_hovering.png \
+		picture/ice_left2.png \
+		picture/fire_right3.png \
+		picture/fire_left2.png \
+		picture/victory_final.png \
+		picture/seven.png \
+		picture/second.png \
+		picture/fire.png \
+		picture/gameover_new.png \
+		picture/four_new.png \
+		picture/ice_right1.png \
+		picture/record_new.png \
+		picture/continue_light.png \
+		picture/help.png \
+		picture/two.png \
+		picture/three_new.png \
+		picture/first.png \
+		picture/start_new.png \
+		picture/help_platform.png \
+		picture/third.png \
+		picture/return_light.png \
+		picture/victory_final_new.png \
+		picture/ice_left1.png \
+		picture/return_dark_new.png \
+		picture/setting_light.png \
+		picture/record_new_new.png \
+		picture/fire_right2.png \
+		picture/timer.png \
+		picture/fire_left1.png \
+		picture/background_new.png
 	C:\Qt\Qt5.11.3\5.11.3\mingw53_32\bin\rcc.exe -name picture picture.qrc -o debug\qrc_picture.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -309,10 +351,11 @@ debug/moc_ourmainwindow.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		setting.h \
-		ui_setting.h \
 		ui_game.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
@@ -321,17 +364,19 @@ debug/moc_ourmainwindow.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
+		ourmainwindow.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
 		ui_record.h \
 		victory.h \
-		ourmainwindow.h \
-		ui_victory.h \
-		lose.h \
 		ui_ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
@@ -342,13 +387,36 @@ debug/moc_ourmainwindow.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
+		ui_victory.h \
+		lose.h \
 		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
 		ourmainwindow.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/moc.exe
 	C:\Qt\Qt5.11.3\5.11.3\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project/debug/moc_predefs.h -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/mkspecs/win32-g++ -IC:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimediaWidgets -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtANGLE -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore -IC:/Qt/Qt5.11.3/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Qt5.11.3/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ourmainwindow.h -o debug\moc_ourmainwindow.cpp
 
-debug/moc_game.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
+debug/moc_game.cpp: setting.h \
+		game.h \
+		lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtguiglobal.h \
@@ -451,6 +519,26 @@ debug/moc_game.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
@@ -466,13 +554,48 @@ debug/moc_game.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
+		help_platform.h \
+		ui_help_platform.h \
+		record.h \
+		ui_record.h \
+		victory.h \
+		ui_ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qaction.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QStatusBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
+		ui_victory.h \
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
 		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
 		game.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/moc.exe
@@ -798,6 +921,27 @@ debug/moc_victory.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
 		game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
@@ -813,29 +957,13 @@ debug/moc_victory.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
-		ui_setting.h \
-		ui_game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
-		ourmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
@@ -854,6 +982,24 @@ debug/moc_victory.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidge
 		ui_victory.h \
 		lose.h \
 		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
 		victory.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/moc.exe
@@ -963,6 +1109,27 @@ debug/moc_lose.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
 		game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
@@ -978,29 +1145,13 @@ debug/moc_lose.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
-		ui_setting.h \
-		ui_game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
-		ourmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
@@ -1019,15 +1170,35 @@ debug/moc_lose.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		ui_victory.h \
 		lose.h \
 		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
 		lose.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/moc.exe
 	C:\Qt\Qt5.11.3\5.11.3\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project/debug/moc_predefs.h -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/mkspecs/win32-g++ -IC:/Users/JinYihan/Documents/GitHub/QT-Project/Qt_Project -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimediaWidgets -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtANGLE -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork -IC:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore -IC:/Qt/Qt5.11.3/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Qt5.11.3/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.11.3/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward lose.h -o debug\moc_lose.cpp
 
-debug/moc_setting.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtguiglobal.h \
+debug/moc_setting.cpp: game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvariant.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobal.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig.h \
@@ -1039,94 +1210,172 @@ debug/moc_setting.cpp: C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsysinfo.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlogging.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qversiontagging.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasicatomic.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_bootstrap.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qgenericatomic.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_cxx11.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtgui-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qchar.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearray.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnamespace.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringbuilder.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlist.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qalgorithms.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiterator.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhashfunctions.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringbuilder.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpair.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearraylist.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringlist.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qregexp.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qscopedpointer.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetatype.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvarlengtharray.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontainerfwd.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmap.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdebug.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhash.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtextstream.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreevent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qscopedpointer.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlocale.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvector.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpoint.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qset.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontiguouscache.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtguiglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtgui-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsize.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcursor.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmargins.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpaintdevice.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrect.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsize.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpoint.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpalette.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcolor.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgb.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgba64.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qbrush.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvector.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qmatrix.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpolygon.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qregion.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiodevice.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qline.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtransform.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainterpath.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qimage.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixelformat.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfont.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontmetrics.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontinfo.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcursor.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qkeysequence.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qevent.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurl.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurlquery.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfile.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
+		help_platform.h \
+		ui_help_platform.h \
+		record.h \
+		ui_record.h \
+		victory.h \
+		ui_ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qaction.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QStatusBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
+		ui_victory.h \
+		lose.h \
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
 		setting.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/bin/moc.exe
@@ -1306,10 +1555,11 @@ debug/main.o: main.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		setting.h \
-		ui_setting.h \
 		ui_game.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
@@ -1318,14 +1568,13 @@ debug/main.o: main.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		help_platform.h \
-		ui_help_platform.h \
-		record.h \
-		ui_record.h \
-		victory.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		ui_ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
@@ -1336,9 +1585,32 @@ debug/main.o: main.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
-		ui_victory.h \
 		lose.h \
-		ui_lose.h
+		victory.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		ui_lose.h \
+		ui_victory.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
+		help_platform.h \
+		ui_help_platform.h \
+		record.h \
+		ui_record.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
 debug/ourmainwindow.o: ourmainwindow.cpp ourmainwindow.h \
@@ -1468,10 +1740,11 @@ debug/ourmainwindow.o: ourmainwindow.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		setting.h \
-		ui_setting.h \
 		ui_game.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
@@ -1480,9 +1753,198 @@ debug/ourmainwindow.o: ourmainwindow.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
+		ui_ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qaction.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QStatusBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
+		lose.h \
+		victory.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		ui_lose.h \
+		ui_victory.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF \
+		help_platform.h \
+		ui_help_platform.h \
+		record.h \
+		ui_record.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ourmainwindow.o ourmainwindow.cpp
+
+debug/game.o: game.cpp game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvariant.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qalgorithms.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhashfunctions.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearraylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringlist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qregexp.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringmatcher.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetatype.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvarlengtharray.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontainerfwd.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmap.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdebug.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhash.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtextstream.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreevent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qscopedpointer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlocale.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvector.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpoint.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qset.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontiguouscache.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtguiglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtgui-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsize.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcursor.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmargins.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpaintdevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrect.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpalette.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcolor.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgb.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgba64.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qbrush.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qmatrix.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpolygon.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qregion.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatastream.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qline.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtransform.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainterpath.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qimage.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixelformat.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixmap.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfont.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontmetrics.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontinfo.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qkeysequence.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qevent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurl.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurlquery.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfile.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfiledevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
@@ -1500,147 +1962,25 @@ debug/ourmainwindow.o: ourmainwindow.cpp ourmainwindow.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
 		ui_victory.h \
 		lose.h \
-		ui_lose.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ourmainwindow.o ourmainwindow.cpp
-
-debug/game.o: game.cpp game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtguiglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtgui-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpaintdevice.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qrect.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsize.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpalette.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcolor.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgb.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qrgba64.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qbrush.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qmatrix.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpolygon.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qregion.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qline.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtransform.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainterpath.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qimage.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixelformat.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfont.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontmetrics.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qfontinfo.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qcursor.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qkeysequence.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qevent.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurl.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qurlquery.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfile.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimedia-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlayer \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplayer.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaobject.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediacontent.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaresource.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkrequest.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetwork-config.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
 		ui_setting.h \
-		ui_game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\game.o game.cpp
 
 debug/help_platform.o: help_platform.cpp help_platform.h \
@@ -1875,6 +2215,9 @@ debug/record.o: record.cpp record.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
@@ -1986,6 +2329,27 @@ debug/victory.o: victory.cpp victory.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
 		game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
@@ -2001,29 +2365,13 @@ debug/victory.o: victory.cpp victory.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
-		ui_setting.h \
-		ui_game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
-		ourmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
@@ -2040,7 +2388,25 @@ debug/victory.o: victory.cpp victory.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
-		ui_lose.h
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\victory.o victory.cpp
 
 debug/lose.o: lose.cpp lose.h \
@@ -2148,6 +2514,27 @@ debug/lose.o: lose.cpp lose.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
 		game.h \
+		setting.h \
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
@@ -2163,29 +2550,13 @@ debug/lose.o: lose.cpp lose.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
-		setting.h \
-		ui_setting.h \
-		ui_game.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
-		ourmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
 		help_platform.h \
 		ui_help_platform.h \
 		record.h \
@@ -2202,10 +2573,30 @@ debug/lose.o: lose.cpp lose.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
 		ui_victory.h \
-		ui_lose.h
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\lose.o lose.cpp
 
 debug/setting.o: setting.cpp setting.h \
+		game.h \
+		lose.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
@@ -2309,7 +2700,83 @@ debug/setting.o: setting.cpp setting.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_setting.h
+		ui_game.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qicon.h \
+		ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMultimedia \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QString \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QUrl \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/QMediaPlaylist \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediaplaylist.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtMultimedia/qmediabindableinterface.h \
+		help_platform.h \
+		ui_help_platform.h \
+		record.h \
+		ui_record.h \
+		victory.h \
+		ui_ourmainwindow.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMenuBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenubar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qaction.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QStatusBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QToolBar \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qtoolbar.h \
+		ui_victory.h \
+		ui_lose.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QDialog \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPixmap \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtGui/QKeyEvent \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtWidgets/qmessagebox.h \
+		ui_setting.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QTime \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.11.3/5.11.3/mingw53_32/include/QtCore/QPointF
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\setting.o setting.cpp
 
 debug/qrc_picture.o: debug/qrc_picture.cpp 
