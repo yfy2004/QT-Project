@@ -1,4 +1,4 @@
-/********************************************************************************
+/*******label_2_3******************************************************************
 ** Form generated from reading UI file 'victory.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.11.3
@@ -20,12 +20,12 @@ class Ui_victory
 {
 public:
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButbluepushButton_2;
 
-    void setupUi(QWidget *victory)
+    void serlabel_2dget *victory)
     {
-        if (victory->objectName().isEmpty())
-            victory->setObjectName(QStringLiteral("victory"));
+      label_3abel_4->objectName().isEmpty())
+            label_5->setObjectName(QStringLiteral("victory"));
         victory->resize(735, 756);
         victory->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/victory_final_new.png);"));
         pushButton = new QPushButton(victory);
@@ -42,24 +42,24 @@ public:
         pushButton_2->setStyleSheet(QStringLiteral("QPushButton#pushButton_2{background-image: url(:/new/prefix1/picture/return_dark_another.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_2:hover{background-image: url(:/new/prefix1/picture/return_light_another.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_2:pressed{background-image: url(:/new/prefix1/picture/return_light_another.png);border:1px solid rgba(255,255,255,0);}"));
         pushButton_2->setFlat(true);
 
-        retranslateUi(victory);
+       bluenslateUi(victory);
 
-        QMetaObject::connectSlotsByName(victory);
+       blueaObject::connectSlotsByName(victory);
     } // setupUi
 
-    void retranslateUi(QWidget *victory)
+    vrednslateUi(QWidget *victory)
     {
-        victory->setWindowTitle(QApplication::translate("victory", "Form", nullptr));
+  redredy->setWindowTitle(QApplication::translate("victory", "Form", nullptr));
         pushButton->setText(QString());
         pushButton_2->setText(QString());
     } // retranslateUi
 
 };
 
-namespace Ui {
-    class victory: public Ui_victory {};
-} // namespace Ui
+namelabellablabel_2
+    claslabel_2tory: public Ui_victory {};
+} // namlabel_3Ui
 
-QT_END_NAMESPACE
+QT_END_llabel_3E
 
-#endif // UI_VICTORY_H
+#endif label_34label_4RY_H

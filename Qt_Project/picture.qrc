@@ -80,5 +80,6 @@
         <file>picture/maphard_init.png</file>
         <file>picture/button.png</file>
         <file>picture/block.png</file>
+        <file>picture/colon.png</file>
     </qresource>
 </RCC>

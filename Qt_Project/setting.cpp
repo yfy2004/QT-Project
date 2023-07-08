@@ -19,6 +19,39 @@ setting::setting(QWidget *parent,Game *father) :
     ui->pushButton_2->setStyleSheet("QPushButton#pushButton_2{background-image: url(:/new/prefix1/picture/continue_dark.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_2:hover{background-image: url(:/new/prefix1/picture/continue_light.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_2:pressed{background-image: url(:/new/prefix1/picture/continue_light.png);border:1px solid rgba(255,255,255,0);}");
     ui->pushButton_3->setStyleSheet("QPushButton#pushButton_3{background-image: url(:/new/prefix1/picture/again_dark.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_3:hover{background-image: url(:/new/prefix1/picture/again_light.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_3:pressed{background-image: url(:/new/prefix1/picture/again_light.png);border:1px solid rgba(255,255,255,0);}");
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
+
+    if(f->blue_num==0)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/zero_new.png);");
+    else if(f->blue_num==1)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/one_new.png);");
+    else if(f->blue_num==2)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/two_new.png);");
+    else if(f->blue_num==3)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/three_new.png);");
+    else if(f->blue_num==4)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/four_new.png);");
+    else if(f->blue_num==5)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/five.png);");
+    else if(f->blue_num==6)
+        ui->blue->setStyleSheet("background-image: url(:/new/prefix1/picture/six.png);");
+
+    if(f->red_num==0)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/zero_new.png);");
+    else if(f->red_num==1)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/one_new.png);");
+    else if(f->red_num==2)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/two_new.png);");
+    else if(f->red_num==3)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/three_new.png);");
+    else if(f->red_num==4)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/four_new.png);");
+    else if(f->red_num==5)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/five.png);");
+    else if(f->red_num==6)
+        ui->red->setStyleSheet("background-image: url(:/new/prefix1/picture/six.png);");
+
+    ui->blue->show();
+    ui->red->show();
 }
 
 setting::~setting()
