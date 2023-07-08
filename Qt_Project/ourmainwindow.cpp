@@ -1,9 +1,12 @@
 #include "ourmainwindow.h"
 #include "ui_ourmainwindow.h"
 
-OurMainWindow::OurMainWindow(QWidget *parent) :
+OurMainWindow::OurMainWindow(QWidget *parent,qint32 time,qint32 red,qint32 blue) :
     QMainWindow(parent),
-    ui(new Ui::OurMainWindow)
+    ui(new Ui::OurMainWindow),
+    game_time(time),
+    red_num(red),
+    blue_num(blue)
 {
     ui->setupUi(this);
     this->setWindowFlags(Qt::FramelessWindowHint);
@@ -79,6 +82,6 @@ void OurMainWindow::on_pushButton_3_clicked()
 
 void OurMainWindow::on_pushButton_2_clicked()
 {
-    record *configWindow = new record;
+    record *configWindow = new record(nullptr,game_time,red_num,blue_num);
     configWindow->show();
 }

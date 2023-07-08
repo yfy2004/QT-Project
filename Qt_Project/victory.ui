@@ -89,7 +89,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -105,7 +105,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
      <x>410</x>
@@ -121,7 +121,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>470</x>
@@ -137,7 +137,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -148,6 +148,22 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/new/prefix1/picture/zero_new.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>101</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/picture/colon.png);</string>
    </property>
    <property name="text">
     <string/>

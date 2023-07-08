@@ -790,6 +790,7 @@ qrc_picture.cpp: picture.qrc \
 		picture/five.png \
 		picture/main_standard.png \
 		picture/ice_right3.png \
+		picture/colon.png \
 		picture/record.png \
 		picture/one.png \
 		picture/gameover.png \

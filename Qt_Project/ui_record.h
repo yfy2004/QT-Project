@@ -30,6 +30,12 @@ public:
     QLabel *label_7;
     QLabel *label_8;
     QLabel *label_9;
+    QLabel *blue;
+    QLabel *red;
+    QLabel *label1;
+    QLabel *label2;
+    QLabel *label3;
+    QLabel *label4;
 
     void setupUi(QWidget *record)
     {
@@ -79,6 +85,30 @@ public:
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setGeometry(QRect(880, 370, 77, 91));
         label_9->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/record_diamond.png);"));
+        blue = new QLabel(record);
+        blue->setObjectName(QStringLiteral("blue"));
+        blue->setGeometry(QRect(600, 185, 36, 51));
+        blue->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        red = new QLabel(record);
+        red->setObjectName(QStringLiteral("red"));
+        red->setGeometry(QRect(600, 235, 36, 51));
+        red->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        label1 = new QLabel(record);
+        label1->setObjectName(QStringLiteral("label1"));
+        label1->setGeometry(QRect(640, 135, 36, 51));
+        label1->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        label2 = new QLabel(record);
+        label2->setObjectName(QStringLiteral("label2"));
+        label2->setGeometry(QRect(675, 135, 36, 51));
+        label2->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        label3 = new QLabel(record);
+        label3->setObjectName(QStringLiteral("label3"));
+        label3->setGeometry(QRect(720, 135, 36, 51));
+        label3->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        label4 = new QLabel(record);
+        label4->setObjectName(QStringLiteral("label4"));
+        label4->setGeometry(QRect(755, 135, 36, 51));
+        label4->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
 
         retranslateUi(record);
 
@@ -98,6 +128,12 @@ public:
         label_7->setText(QString());
         label_8->setText(QString());
         label_9->setText(QString());
+        blue->setText(QString());
+        red->setText(QString());
+        label1->setText(QString());
+        label2->setText(QString());
+        label3->setText(QString());
+        label4->setText(QString());
     } // retranslateUi
 
 };

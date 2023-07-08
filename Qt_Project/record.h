@@ -12,7 +12,7 @@ class record : public QWidget
     Q_OBJECT
 
 public:
-    explicit record(QWidget *parent = nullptr);
+    explicit record(QWidget *parent = nullptr,qint32 game_time=0,qint32 red_num=0,qint32 blue_num=0);
     ~record();
 
 private slots:

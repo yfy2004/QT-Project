@@ -26,7 +26,7 @@ class OurMainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit OurMainWindow(QWidget *parent = nullptr);
+    explicit OurMainWindow(QWidget *parent = nullptr,qint32 game_time=0,qint32 red_num=0,qint32 blue_num=0);
     ~OurMainWindow();
 
 private slots:
@@ -47,6 +47,9 @@ private slots:
 private:
     Ui::OurMainWindow *ui;
     QMediaPlayer *my_BGM=nullptr;
+
+public:
+    qint32 game_time,red_num,blue_num;
 };
 
 #endif // OURMAINWINDOW_H

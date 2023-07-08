@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
@@ -21,9 +22,11 @@ class Ui_setting
 public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QPushButbluepushButton_3;
+    QPushButton *pushButton_3;
+    QLabel *blue;
+    QLabel *red;
 
-    void sered(QWidget *setting)
+    void setupUi(QWidget *setting)
     {
         if (setting->objectName().isEmpty())
             setting->setObjectName(QStringLiteral("setting"));
@@ -50,26 +53,36 @@ public:
         pushButton_3->setGeometry(QRect(200, 180, 330, 96));
         pushButton_3->setStyleSheet(QStringLiteral("QPushButton#pushButton_3{background-image: url(:/new/prefix1/picture/again_dark.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_3:hover{background-image: url(:/new/prefix1/picture/again_light.png);border:1px solid rgba(255,255,255,0);}QPushButton#pushButton_3:pressed{background-image: url(:/new/prefix1/picture/again_light.png);border:1px solid rgba(255,255,255,0);}"));
         pushButton_3->setFlat(true);
+        blue = new QLabel(setting);
+        blue->setObjectName(QStringLiteral("blue"));
+        blue->setGeometry(QRect(400, 413, 36, 51));
+        blue->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
+        red = new QLabel(setting);
+        red->setObjectName(QStringLiteral("red"));
+        red->setGeometry(QRect(400, 490, 36, 51));
+        red->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/zero_new.png);"));
 
-       bluenslateUi(setting);
+        retranslateUi(setting);
 
-       blueaObject::connectSlotsByName(setting);
+        QMetaObject::connectSlotsByName(setting);
     } // setupUi
 
-    voredanslateUi(QWidget *setting)
+    void retranslateUi(QWidget *setting)
     {
-  red setting->setWindowTitle(QApplication::translate("setting", "Form", nullptr));
+        setting->setWindowTitle(QApplication::translate("setting", "Form", nullptr));
         pushButton->setText(QString());
         pushButton_2->setText(QString());
         pushButton_3->setText(QString());
+        blue->setText(QString());
+        red->setText(QString());
     } // retranslateUi
 
 };
 
-namespablue {
+namespace Ui {
     class setting: public Ui_setting {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif red_SETTING_H
+#endif // UI_SETTING_H
