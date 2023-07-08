@@ -72,6 +72,12 @@ Game::Game(QWidget *parent,qint32 num) :
         ui->red1->setVisible(true);
         ui->red2->setVisible(true);
         ui->red3->setVisible(true);
+        ui->blue4->setVisible(false);
+        ui->blue5->setVisible(false);
+        ui->blue6->setVisible(false);
+        ui->red4->setVisible(false);
+        ui->red5->setVisible(false);
+        ui->red6->setVisible(false);
         ui->button->setVisible(false);
         ui->block->setVisible(false);
     }
@@ -84,12 +90,12 @@ Game::Game(QWidget *parent,qint32 num) :
         ui->red1->setVisible(false);
         ui->red2->setVisible(false);
         ui->red3->setVisible(false);
-        /*ui->blue4->setVisible(true);
+        ui->blue4->setVisible(true);
         ui->blue5->setVisible(true);
         ui->blue6->setVisible(true);
         ui->red4->setVisible(true);
         ui->red5->setVisible(true);
-        ui->red6->setVisible(true);*/
+        ui->red6->setVisible(true);
         ui->button->setStyleSheet("background-image: url(:/new/prefix1/picture/button.png);");
         ui->block->setStyleSheet("background-image: url(:/new/prefix1/picture/block.png);");
         ui->button->setVisible(true);
