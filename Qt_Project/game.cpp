@@ -66,6 +66,12 @@ Game::Game(QWidget *parent,qint32 num) :
         game_time=0;
         blue[1]=0,blue[2]=0,blue[3]=0;
         red[1]=0,red[2]=0,red[3]=0;
+        ui->blue1->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->blue2->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->blue3->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->red1->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
+        ui->red2->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
+        ui->red3->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
         ui->blue1->setVisible(true);
         ui->blue2->setVisible(true);
         ui->blue3->setVisible(true);
@@ -84,6 +90,12 @@ Game::Game(QWidget *parent,qint32 num) :
     else{
         blue[4]=0,blue[5]=0,blue[6]=0;
         red[4]=0,red[5]=0,red[6]=0;
+        ui->blue4->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->blue5->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->blue6->setStyleSheet("background-image: url(:/new/prefix1/picture/blue diamond.png);");
+        ui->red4->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
+        ui->red5->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
+        ui->red6->setStyleSheet("background-image: url(:/new/prefix1/picture/red diamond.png);");
         ui->blue1->setVisible(false);
         ui->blue2->setVisible(false);
         ui->blue3->setVisible(false);
@@ -275,12 +287,21 @@ void Game::update()
     else if(second/10==9)
         ui->label_4->setStyleSheet("background-image: url(:/new/prefix1/picture/nine.png);");
 
-    if(ui->labelImg1->y()>=100 && ui->labelImg1->y()<=134 && ui->labelImg1->x()>=1130 && ui->labelImg1->x()<=1180 && ui->labelImg->y()>=100 && ui->labelImg->y()<=134 && ui->labelImg->x()>=1030 && ui->labelImg->x()<=1080){
+    if(game_num==1 && ui->labelImg1->y()>=100 && ui->labelImg1->y()<=134 && ui->labelImg1->x()>=1130 && ui->labelImg1->x()<=1180 && ui->labelImg->y()>=100 && ui->labelImg->y()<=134 && ui->labelImg->x()>=1030 && ui->labelImg->x()<=1080){
         timer->stop();
         timer_ice->stop();
         timer_fire->stop();
         timer_animation->stop();
         this->game_victory();
+        return;
+    }
+    if(game_num==2 && ui->labelImg1->y()>=208 && ui->labelImg1->y()<=241 && ui->labelImg1->x()>=49 && ui->labelImg1->x()<=92 && ui->labelImg->y()>=79 && ui->labelImg->y()<=112 && ui->labelImg->x()>=1124 && ui->labelImg->x()<=1167){
+        timer->stop();
+        timer_ice->stop();
+        timer_fire->stop();
+        timer_animation->stop();
+        this->game_victory();
+        return;
     }
 }
 
@@ -823,8 +844,8 @@ void Game::ice_update2()
         ui->labelImg1->move(720,ui->labelImg1->y());
         ice_vx=0;
     }
-    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=400 && ui->labelImg1->x()<=535){
-        qreal t=457+(573-ui->labelImg1->y());
+    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=630 && ui->labelImg1->x()>=400 && ui->labelImg1->x()<=535){
+        qreal t=400+(630-ui->labelImg1->y());
         if(ui->labelImg1->x()<t && ui->labelImg1->x()>t-15){
             ice_is_falling=true;
             ui->labelImg1->move(t,ui->labelImg1->y());
@@ -832,7 +853,7 @@ void Game::ice_update2()
             ice_vy=0;
         }
     }
-    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=730 && ui->labelImg1->x()<=865){
+    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=630 && ui->labelImg1->x()>=730 && ui->labelImg1->x()<=865){
         qreal t=730+(ui->labelImg1->y()-495);
         if(ui->labelImg1->x()>t && ui->labelImg1->x()<t+15){
             ice_is_falling=true;
@@ -875,8 +896,32 @@ void Game::ice_update2()
             ice_is_falling=true;
         }
     }
-    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=300 && ui->labelImg1->x()<=435){
-        qreal t=357+(573-ui->labelImg1->y());
+    if(ui->labelImg1->y()>=470 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=398 && ui->labelImg1->x()<=501){
+        qreal t=470+(501-ui->labelImg1->x());
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
+            ice_is_falling=false;
+            ui->labelImg1->move(ui->labelImg1->x(),t);
+            ice_vx/=1.414;
+            ice_vy=-ice_vx;
+        }
+        else{
+            ice_is_falling=true;
+        }
+    }
+    if(ui->labelImg1->y()>=470 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=760 && ui->labelImg1->x()<=863){
+        qreal t=470+(ui->labelImg1->x()-760);
+        if(ui->labelImg1->y()>t && ui->labelImg1->y()<t+15){
+            ice_is_falling=false;
+            ui->labelImg1->move(ui->labelImg1->x(),t);
+            ice_vx/=1.414;
+            ice_vy=ice_vx;
+        }
+        else{
+            ice_is_falling=true;
+        }
+    }
+    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=630 && ui->labelImg1->x()>=300 && ui->labelImg1->x()<=435){
+        qreal t=300+(630-ui->labelImg1->y());
         if(ui->labelImg1->x()<t && ui->labelImg1->x()>t-15){
             ice_is_falling=true;
             ui->labelImg1->move(t,ui->labelImg1->y());
@@ -884,7 +929,7 @@ void Game::ice_update2()
             ice_vy=0;
         }
     }
-    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=573 && ui->labelImg1->x()>=830 && ui->labelImg1->x()<=965){
+    if(ui->labelImg1->y()>=495 && ui->labelImg1->y()<=630 && ui->labelImg1->x()>=830 && ui->labelImg1->x()<=965){
         qreal t=830+(ui->labelImg1->y()-495);
         if(ui->labelImg1->x()>t && ui->labelImg1->x()<t+15){
             ice_is_falling=true;
@@ -921,6 +966,50 @@ void Game::ice_update2()
         ui->labelImg1->move(ui->labelImg1->x(),165);
         ice_vy=0;
     }
+    if(ui->labelImg1->y()>590 && ui->labelImg1->y()<610 && ui->labelImg1->x()<403 && ui->labelImg1->x()>398){
+        ui->labelImg1->move(400,ui->labelImg1->y());
+        ice_vx=0;
+    }
+    if(ui->labelImg1->y()>590 && ui->labelImg1->y()<610 && ui->labelImg1->x()<800 && ui->labelImg1->x()>795){
+        ui->labelImg1->move(800,ui->labelImg1->y());
+        ice_vx=0;
+    }
+    if(ui->labelImg1->y()>450 && ui->labelImg1->y()<490 && ui->labelImg1->x()<525 && ui->labelImg1->x()>505){
+        qreal t;
+        if(ui->labelImg1->x()<515)
+            t=505;
+        else
+            t=525;
+        ui->labelImg1->move(t,ui->labelImg1->y());
+        ice_vx=0;
+    }
+    if(ui->labelImg1->y()>450 && ui->labelImg1->y()<490 && ui->labelImg1->x()<750 && ui->labelImg1->x()>730){
+        qreal t;
+        if(ui->labelImg1->x()<740)
+            t=730;
+        else
+            t=750;
+        ui->labelImg1->move(t,ui->labelImg1->y());
+        ice_vx=0;
+    }
+    if(ui->labelImg1->y()>450 && ui->labelImg1->y()<490 && ui->labelImg1->x()<425 && ui->labelImg1->x()>405){
+        qreal t;
+        if(ui->labelImg1->x()<415)
+            t=405;
+        else
+            t=425;
+        ui->labelImg1->move(t,ui->labelImg1->y());
+        ice_vx=0;
+    }
+    if(ui->labelImg1->y()>450 && ui->labelImg1->y()<490 && ui->labelImg1->x()<850 && ui->labelImg1->x()>830){
+        qreal t;
+        if(ui->labelImg1->x()<840)
+            t=830;
+        else
+            t=850;
+        ui->labelImg1->move(t,ui->labelImg1->y());
+        ice_vx=0;
+    }
     if(ui->labelImg1->y()>=509 && ui->labelImg1->y()<573 && ui->labelImg1->x()>534 && ui->labelImg1->x()<=544){
         ice_is_falling=true;
     }
@@ -938,6 +1027,30 @@ void Game::ice_update2()
     }
     if(ui->labelImg1->y()>=440 && ui->labelImg1->y()<445 && ui->labelImg1->x()>808 && ui->labelImg1->x()<=813){
         ice_is_falling=true;
+    }
+    if(buttonPressed && ui->labelImg1->y()>=573){
+        ice_is_falling=true;
+    }
+    if(ui->labelImg1->y()>=480 && ui->labelImg1->y()<=509 && ui->labelImg1->x()<=600 && ui->labelImg1->x()>=565){
+        if(!blue[4]){
+            ui->blue4->setVisible(false);
+            blue[4]=1;
+            blue_num++;
+        }
+    }
+    if(ui->labelImg1->y()>=210 && ui->labelImg1->y()<=241 && ui->labelImg1->x()<=180 && ui->labelImg1->x()>=145){
+        if(!blue[5]){
+            ui->blue5->setVisible(false);
+            blue[5]=1;
+            blue_num++;
+        }
+    }
+    if(ui->labelImg1->y()>=600 && ui->labelImg1->y()<=639 && ui->labelImg1->x()<=520 && ui->labelImg1->x()>=485){
+        if(!blue[6]){
+            ui->blue6->setVisible(false);
+            blue[6]=1;
+            blue_num++;
+        }
     }
 }
 
@@ -1514,6 +1627,30 @@ void Game::fire_update2()
             fire_is_falling=true;
         }
     }
+    if(ui->labelImg->y()>=470 && ui->labelImg->y()<=573 && ui->labelImg->x()>=398 && ui->labelImg->x()<=501){
+        qreal t=470+(501-ui->labelImg->x());
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=-fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
+    if(ui->labelImg->y()>=470 && ui->labelImg->y()<=573 && ui->labelImg->x()>=760 && ui->labelImg->x()<=863){
+        qreal t=470+(ui->labelImg->x()-760);
+        if(ui->labelImg->y()>t && ui->labelImg->y()<t+15){
+            fire_is_falling=false;
+            ui->labelImg->move(ui->labelImg->x(),t);
+            fire_vx/=1.414;
+            fire_vy=fire_vx;
+        }
+        else{
+            fire_is_falling=true;
+        }
+    }
     if(ui->labelImg->y()>=495 && ui->labelImg->y()<=630 && ui->labelImg->x()>=300 && ui->labelImg->x()<=435){
         qreal t=300+(630-ui->labelImg->y());
         if(ui->labelImg->x()<t && ui->labelImg->x()>t-15){
@@ -1560,6 +1697,50 @@ void Game::fire_update2()
         ui->labelImg->move(ui->labelImg->x(),165);
         fire_vy=0;
     }
+    if(ui->labelImg->y()>590 && ui->labelImg->y()<610 && ui->labelImg->x()<403 && ui->labelImg->x()>398){
+        ui->labelImg->move(400,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>590 && ui->labelImg->y()<610 && ui->labelImg->x()<800 && ui->labelImg->x()>795){
+        ui->labelImg->move(800,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>450 && ui->labelImg->y()<490 && ui->labelImg->x()<525 && ui->labelImg->x()>505){
+        qreal t;
+        if(ui->labelImg->x()<515)
+            t=505;
+        else
+            t=525;
+        ui->labelImg->move(t,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>450 && ui->labelImg->y()<490 && ui->labelImg->x()<750 && ui->labelImg->x()>730){
+        qreal t;
+        if(ui->labelImg->x()<740)
+            t=730;
+        else
+            t=750;
+        ui->labelImg->move(t,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>450 && ui->labelImg->y()<490 && ui->labelImg->x()<425 && ui->labelImg->x()>405){
+        qreal t;
+        if(ui->labelImg->x()<415)
+            t=405;
+        else
+            t=425;
+        ui->labelImg->move(t,ui->labelImg->y());
+        fire_vx=0;
+    }
+    if(ui->labelImg->y()>450 && ui->labelImg->y()<490 && ui->labelImg->x()<850 && ui->labelImg->x()>830){
+        qreal t;
+        if(ui->labelImg->x()<840)
+            t=830;
+        else
+            t=850;
+        ui->labelImg->move(t,ui->labelImg->y());
+        fire_vx=0;
+    }
     if(ui->labelImg->y()>=509 && ui->labelImg->y()<573 && ui->labelImg->x()>534 && ui->labelImg->x()<=544){
         fire_is_falling=true;
     }
@@ -1578,8 +1759,31 @@ void Game::fire_update2()
     if(ui->labelImg->y()>=440 && ui->labelImg->y()<445 && ui->labelImg->x()>808 && ui->labelImg->x()<=813){
         fire_is_falling=true;
     }
+    if(buttonPressed && ui->labelImg->y()>=573){
+        fire_is_falling=true;
+    }
+    if(ui->labelImg->y()>=480 && ui->labelImg->y()<=509 && ui->labelImg->x()<=700 && ui->labelImg->x()>=665){
+        if(!red[4]){
+            red[4]=1;
+            ui->red4->setVisible(false);
+            red_num++;
+        }
+    }
+    if(ui->labelImg->y()>=70 && ui->labelImg->y()<=112 && ui->labelImg->x()<=1090 && ui->labelImg->x()>=1055){
+        if(!red[5]){
+            red[5]=1;
+            ui->red5->setVisible(false);
+            red_num++;
+        }
+    }
+    if(ui->labelImg->y()>=600 && ui->labelImg->y()<=639 && ui->labelImg->x()<=780 && ui->labelImg->x()>=745){
+        if(!red[6]){
+            red[6]=1;
+            ui->red6->setVisible(false);
+            red_num++;
+        }
+    }
 }
-
 
 void Game::animation_update()
 {

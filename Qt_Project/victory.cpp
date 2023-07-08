@@ -34,9 +34,11 @@ void victory::on_pushButton_clicked()
         f->my_game_music=nullptr;
     }
     f->close();
-    qDebug()<<f->game_num<<endl;
     if(f->game_num==1){
         Game *configWindow = new Game(nullptr,2);
+        configWindow->red_num=f->red_num;
+        configWindow->blue_num=f->blue_num;
+        configWindow->game_time=f->game_time;
         configWindow->show();
         this->close();
     }

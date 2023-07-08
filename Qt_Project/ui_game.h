@@ -92,11 +92,11 @@ public:
         label_5->setStyleSheet(QStringLiteral("background:transparent;"));
         labelImg = new QLabel(Game);
         labelImg->setObjectName(QStringLiteral("labelImg"));
-        labelImg->setGeometry(QRect(1012, 241, 101, 91));
+        labelImg->setGeometry(QRect(425, 650, 101, 91));
         labelImg->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/fire.png);"));
         labelImg1 = new QLabel(Game);
         labelImg1->setObjectName(QStringLiteral("labelImg1"));
-        labelImg1->setGeometry(QRect(500, 620, 101, 91));
+        labelImg1->setGeometry(QRect(780, 639, 101, 91));
         labelImg1->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/picture/ice.png);"));
         blue1 = new QLabel(Game);
         blue1->setObjectName(QStringLiteral("blue1"));
