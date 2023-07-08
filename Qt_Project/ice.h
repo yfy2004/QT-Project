@@ -9,26 +9,5 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 
-namespace Ui {
-class Ice;
-}
-
-class Ice : public QWidget
-{
-    Q_OBJECT
-
-public:
-    explicit Ice(QWidget *parent = 0);
-    ~Ice();
-
-protected:
-
-    void paintEvent(QPaintEvent *event);
-
-    void keyPressEvent(QKeyEvent *event);
-
-public:
-    Ui::Ice *ui;
-};
 
 #endif

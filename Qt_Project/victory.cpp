@@ -1,5 +1,6 @@
 #include "victory.h"
 #include "ui_victory.h"
+#include <QDebug>
 
 victory::victory(QWidget *parent,Game *father) :
     QWidget(parent),
@@ -33,9 +34,17 @@ void victory::on_pushButton_clicked()
         f->my_game_music=nullptr;
     }
     f->close();
-    Game *configWindow = new Game;
-    configWindow->show();
-    this->close();
+    qDebug()<<f->game_num<<endl;
+    if(f->game_num==1){
+        Game *configWindow = new Game(nullptr,2);
+        configWindow->show();
+        this->close();
+    }
+    else{
+        OurMainWindow *configWindow = new OurMainWindow;
+        configWindow->show();
+        this->close();
+    }
 }
 
 void victory::on_pushButton_2_clicked()

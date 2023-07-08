@@ -29,8 +29,6 @@ SOURCES += \
         main.cpp \
         ourmainwindow.cpp \
     game.cpp \
-    ice.cpp \
-    fire.cpp \
     help_platform.cpp \
     record.cpp \
     victory.cpp \
@@ -40,8 +38,6 @@ SOURCES += \
 HEADERS += \
         ourmainwindow.h \
     game.h \
-    ice.h \
-    fire.h \
     help_platform.h \
     record.h \
     victory.h \
@@ -51,8 +47,6 @@ HEADERS += \
 FORMS += \
         ourmainwindow.ui \
     game.ui \
-    ice.ui \
-    fire.ui \
     help_platform.ui \
     record.ui \
     victory.ui \

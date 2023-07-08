@@ -54,5 +54,31 @@
         <file>picture/two_new.png</file>
         <file>picture/three_new.png</file>
         <file>picture/four_new.png</file>
+        <file>picture/ice.png</file>
+        <file>picture/map0.png</file>
+        <file>picture/fire.png</file>
+        <file>picture/fire_jump.png</file>
+        <file>picture/fire_left1.png</file>
+        <file>picture/fire_left2.png</file>
+        <file>picture/fire_left3.png</file>
+        <file>picture/fire_left4.png</file>
+        <file>picture/fire_right1.png</file>
+        <file>picture/fire_right2.png</file>
+        <file>picture/fire_right3.png</file>
+        <file>picture/fire_right4.png</file>
+        <file>picture/ice_jump.png</file>
+        <file>picture/ice_left1.png</file>
+        <file>picture/ice_left2.png</file>
+        <file>picture/ice_left4.png</file>
+        <file>picture/ice_left3.png</file>
+        <file>picture/ice_right1.png</file>
+        <file>picture/ice_right2.png</file>
+        <file>picture/ice_right3.png</file>
+        <file>picture/ice_right4.png</file>
+        <file>picture/blue diamond.png</file>
+        <file>picture/red diamond.png</file>
+        <file>picture/maphard_init.png</file>
+        <file>picture/button.png</file>
+        <file>picture/block.png</file>
     </qresource>
 </RCC>
